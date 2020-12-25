@@ -1,12 +1,14 @@
 // const data = require('./utils/projectsData');
 
+
 module.exports = {
   trailingSlash: true,
   exportPathMap: async function () {
     // const { projects } = data;
     const paths = {
-      '/': { page: '/' },
-    };
+      "/": { page: "/" },
+    }
+
 
     // projects.forEach((project) => {
     //   paths[`/project/${project.slug}`] = {
@@ -15,6 +17,6 @@ module.exports = {
     //   };
     // });
 
-    return paths;
+    return paths
   },
-};
+}

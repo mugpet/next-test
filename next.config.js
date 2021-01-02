@@ -1,22 +1,17 @@
-// const data = require('./utils/projectsData');
+// next.config.js
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/v0/:path*",
+        destination: "https://api.airtable.com/v0/:path*",
+      },
+      {
+        source: "/apis/v1/:path*",
+        destination: "https://coda.io/apis/v1/:path*",
+      },
+    ]
+  },
+}
 
-
-// module.exports = {
-//   trailingSlash: true,
-//   exportPathMap: async function () {
-//     // const { projects } = data;
-//     const paths = {
-//       "/": { page: "/" },
-//     }
-
-
-//     // projects.forEach((project) => {
-//     //   paths[`/project/${project.slug}`] = {
-//     //     page: '/project/[path]',
-//     //     query: { path: project.slug },
-//     //   };
-//     // });
-
-//     return paths
-//   },
-// }
+// { source: "/api/:path*", destination: "http://localhost:8000/:path*" },

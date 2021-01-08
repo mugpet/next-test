@@ -12,7 +12,7 @@ const useCoda = () => {
   const token = "aadfc738-6992-4c05-a236-19b705da3cc2"
   const pageId = "canvas-rqbxVNMw6i"
   // const tableIdOrName = "grid-5L6bQvHD-F"
-  const tableIdOrName = "grid-Gnja2_iH8B"
+  const tableIdOrName = "grid-cNXF4rxLjX"  // Nyheder
   const headers = {
     Authorization: `Bearer ${token}`,
     ContentType: "application/x-www-form-urlencoded",

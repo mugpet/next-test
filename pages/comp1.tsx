@@ -1,7 +1,7 @@
 // import { useQuery } from "react-query"
 // import useAirtable from "./useAirtable"
-import useCoda from "./useCoda"
-import Post from "./Post"
+import useCoda from "../components/useCoda"
+import Post from "../components/Post"
 
 // import useCoda from './useCoda'
 

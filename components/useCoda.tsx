@@ -22,7 +22,7 @@ const useCoda = () => {
   //   const url = `https://coda.io/apis/v1/docs/${docId}/pages/${pageId}`
   //   const url = `https://coda.io/apis/v1/apis/v1/docs/${docId}/tables/${tableIdOrName}`
   
-  const url = `/apis/v1/docs/${docId}/tables/${tableIdOrName}/rows?valueFormat=rich&useColumnNames=true`
+  const url = `https://coda.io/apis/v1/docs/${docId}/tables/${tableIdOrName}/rows?valueFormat=rich&useColumnNames=true`
 
   //   const getTable = async () => {
   //     let res = await

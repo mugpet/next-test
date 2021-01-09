@@ -5,14 +5,19 @@ module.exports = {
       {
         source: "/apis/v1/:path*",
         destination: "https://coda.io/apis/v1/:path*",
-      }
+      },
     ]
   },
 }
 
+// {
+//   source: "/api/v2/:path*",
+//   destination: "https://api.clickup.com/api/v2/:path*",
+// }
+
 // { source: "/api/:path*", destination: "http://localhost:8000/:path*" },
 
-  // {
-      //   source: "/v0/:path*",
-      //   destination: "https://api.airtable.com/v0/:path*",
-      // },
+// {
+//   source: "/v0/:path*",
+//   destination: "https://api.airtable.com/v0/:path*",
+// },

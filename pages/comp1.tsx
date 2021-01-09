@@ -1,12 +1,14 @@
 // import { useQuery } from "react-query"
 // import useAirtable from "./useAirtable"
-import useCoda from "../components/useCoda"
 import Post from "../components/Post"
+import useCoda from "../components/useCoda"
+// import useClickup from "../components/useClickup"
 
 // import useCoda from './useCoda'
 
 const Comp1 = (props) => {
   const { data, isLoading } = useCoda()
+  // const { data, isLoading } = useClickup()
 
   console.log("Data is loading:", isLoading)
 
@@ -16,8 +18,8 @@ const Comp1 = (props) => {
   ? data.items.map(({values:p}) => {
 
     // remove ``` before and after rich text (added by Coda)
-    const Titel = p.Titel.replace(/(^```|```$)/gm,"")
-    const Indhold = p.Indhold.replace(/^```|```$/gm,"")
+    const Titel = p.Titel && p.Titel.replace(/(^```|```$)/gm,"")
+    const Indhold = p.Indhold && p.Indhold.replace(/^```|```$/gm,"")
 
     console.log("p:", p)
     return <Post key={p.Titel} Title={Titel} Content={Indhold} images={p['Overskfts billede']} />
